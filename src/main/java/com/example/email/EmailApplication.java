@@ -38,7 +38,7 @@ public class EmailApplication {
     public void sendEmail() {
         try
         {
-            String filePath0 = "C:\\Users\\Moi\\Desktop\\Abitur.pdf";
+            /*String filePath0 = "C:\\Users\\Moi\\Desktop\\Abitur.pdf";
             String filePath1 = "C:\\Users\\Moi\\Desktop\\Amine Tamar - Lebenslauf.pdf";
             String filePath2 = "C:\\Users\\Moi\\Desktop\\Praktika - Informatik .pdf";
             String filePath3 = "C:\\Users\\Moi\\Desktop\\Diplom -informatik.pdf";
@@ -59,38 +59,38 @@ public class EmailApplication {
             while((line=br.readLine())!=null)
             {
                 sb.append(line);      //appends line to string buffer
-                sb.append("\n");
+                sb.append("\n");*/
 
-                senderService.sendEmail(line,
-                        "mahdi.bouhouch7@gmail.com",
-                        "Ausbildung - Fachinformatiker Anwendungsentwicklung",
-                        "<b>Sehr geehrte Damen und Herren,</b>  <br>\n" +
-                                "<br>\n" +
-                                "wie ich mit großer Begeisterung auf der Internetseite der Bundesagentur für Arbeit entnehmen konnte, bieten sie eine Ausbildung zum Fachinformatiker an. Gerne bringe ich mit diesem Schreiben meine Motivation und mein Engagement für die Ausbildung in Ihrem Unternehmen zum Ausdruck. <br>\n" +
-                                "<br>\n" +
-                                "Ich bin ein 27-jähriger Marokkaner. Ich wohne immer noch in Marokko und habe hier mein Abitur absolviert und ein Diplom als IT-Spezialist abgeschlossen. <br>\n" +
-                                "Durch mein besonderes Interesse in dem Bereich IT sowie meinen guten Kenntnissen in der Fachinformatik, möchte ich Sie davon überzeugen, dass ich diese Tätigkeit nach Ihren Vorstellungen ausfüllen kann.  <br>\n" +
-                                "Ich habe mir Deutsch alleine angeeignet und am Goethe-Institut die Prüfung für das B1-Zertifikat mit \"gut\" bestanden.Momentan lerne ich für das B2-Zertifikat auf einer Privatschule.  <br>\n" +
-                                "Interkulturelle Kompetenz bringe ich selbstverständlich ebenfalls mit, da ich Englisch, und Französisch beherrsche. Arabisch ist meine Muttersprache.  <br>\n" +
-                                "Jetzt möchte ich sehr gerne noch einen Schritt weiter gehen und die vielen weiteren Facetten, die dieser Beruf mit sich bringt in Deutschland erlernen.  <br>\n" +
-                                "<br>\n" +
-                                "Im Anhang finden Sie meine  Bewerbungsunterlagen (übersetzt).  <br>\n" +
-                                "Bei Rückfragen stehe ich Ihnen gerne zur Verfügung und freue mich schon darauf, Sie in einem persönlichen Vorstellungsgespräch von mir überzeugen zu dürfen .  <br>\n" +
-                                "<br>\n" +
-                                "Danke im Voraus für Ihre Antwort.  <br>\n" +
-                                "<br>\n" +
-                                "Freundliche Grüße  <br>\n" +
-                                "<br>\n" +
-                                "<span style=\"color:#808080\"> <b>Amine Tamar</b> </span>",
-                        bytesArray);
-            }
+            senderService.sendEmail("mahdi.bouhouch@edu.uiz.ac.ma",
+                    "mahdi.bouhouch7@gmail.com",
+                    "Ausbildung - Fachinformatiker Anwendungsentwicklung",
+                    "<b>Sehr geehrte Damen und Herren,</b>  <br>\n" +
+                            "<br>\n" +
+                            "wie ich mit großer Begeisterung auf der Internetseite der Bundesagentur für Arbeit entnehmen konnte, bieten sie eine Ausbildung zum Fachinformatiker an. Gerne bringe ich mit diesem Schreiben meine Motivation und mein Engagement für die Ausbildung in Ihrem Unternehmen zum Ausdruck. <br>\n" +
+                            "<br>\n" +
+                            "Ich bin ein 27-jähriger Marokkaner. Ich wohne immer noch in Marokko und habe hier mein Abitur absolviert und ein Diplom als IT-Spezialist abgeschlossen. <br>\n" +
+                            "Durch mein besonderes Interesse in dem Bereich IT sowie meinen guten Kenntnissen in der Fachinformatik, möchte ich Sie davon überzeugen, dass ich diese Tätigkeit nach Ihren Vorstellungen ausfüllen kann.  <br>\n" +
+                            "Ich habe mir Deutsch alleine angeeignet und am Goethe-Institut die Prüfung für das B1-Zertifikat mit \"gut\" bestanden.Momentan lerne ich für das B2-Zertifikat auf einer Privatschule.  <br>\n" +
+                            "Interkulturelle Kompetenz bringe ich selbstverständlich ebenfalls mit, da ich Englisch, und Französisch beherrsche. Arabisch ist meine Muttersprache.  <br>\n" +
+                            "Jetzt möchte ich sehr gerne noch einen Schritt weiter gehen und die vielen weiteren Facetten, die dieser Beruf mit sich bringt in Deutschland erlernen.  <br>\n" +
+                            "<br>\n" +
+                            "Im Anhang finden Sie meine  Bewerbungsunterlagen (übersetzt).  <br>\n" +
+                            "Bei Rückfragen stehe ich Ihnen gerne zur Verfügung und freue mich schon darauf, Sie in einem persönlichen Vorstellungsgespräch von mir überzeugen zu dürfen .  <br>\n" +
+                            "<br>\n" +
+                            "Danke im Voraus für Ihre Antwort.  <br>\n" +
+                            "<br>\n" +
+                            "Freundliche Grüße  <br>\n" +
+                            "<br>\n" +
+                            "<span style=\"color:#808080\"> <b>Amine Tamar</b> </span>"
+            );
+            /*}
             fr.close();    //closes the stream and release the resources
             System.out.println("Contents of File: ");
             System.out.println(sb.toString());   //returns a string that textually represents the object
         }
         catch(IOException e)
         {
-            e.printStackTrace();
+            e.printStackTrace();*/
         } catch (MessagingException e) {
             e.printStackTrace();
         }

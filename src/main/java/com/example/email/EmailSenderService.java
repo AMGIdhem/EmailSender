@@ -16,7 +16,7 @@ public class EmailSenderService {
     @Autowired
     private JavaMailSender mailSender;
 
-    public void sendEmail(String to, String from, String sub, String msgBody, byte[][] content) throws MessagingException {
+    public void sendEmail(String to, String from, String sub, String msgBody) throws MessagingException {
 
         MimeMessage message = mailSender.createMimeMessage();
         try {
@@ -25,11 +25,11 @@ public class EmailSenderService {
             helper.setTo(to);
             helper.setSubject(sub);
             helper.setText(msgBody, true);
-            helper.addAttachment("Abitur.pdf", new ByteArrayResource(content[0]));
+            /*helper.addAttachment("Abitur.pdf", new ByteArrayResource(content[0]));
             helper.addAttachment("Amine Tamar - Lebenslauf.pdf", new ByteArrayResource(content[1]));
             helper.addAttachment("Praktika - Informatik .pdf", new ByteArrayResource(content[2]));
             helper.addAttachment("Diplom -informatik.pdf", new ByteArrayResource(content[3]));
-            helper.addAttachment("Deutsch B1 goethe institut Zertifikat   .pdf", new ByteArrayResource(content[4]));
+            helper.addAttachment("Deutsch B1 goethe institut Zertifikat   .pdf", new ByteArrayResource(content[4]));*/
             mailSender.send(message);
         } catch (MessagingException e) {
             e.printStackTrace();
